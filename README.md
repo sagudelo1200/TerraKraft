@@ -1,2 +1,2 @@
 # TerraKraft
-Copia del servidor TerraKraft en Minecraft
+Archivos del servidor TerraKraft en Minecraft
