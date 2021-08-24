@@ -41,7 +41,7 @@ function IndexHeader() {
               src={require("../../assets/img/terra-logo.png").default}
             ></img>
             <h1 className="h1-seo">TerraKraft</h1>
-            <h3>Survival Avanzado 100% en Español - Vanilla Mejorado</h3>
+            <h3>Survival Avanzado en Español - Vanilla Mejorado</h3>
           </div>
           <h6 className="category category-absolute">
             Creado por{" "}

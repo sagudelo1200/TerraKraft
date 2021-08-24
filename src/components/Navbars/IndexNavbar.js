@@ -1,5 +1,7 @@
 import React from "react";
 
+import Rules from '../../views/index-sections/RulesModal.js';
+
 // reactstrap components
 import {
 	Navbar,
@@ -78,22 +80,7 @@ function IndexNavbar() {
 						navbar
 					>
 						<Nav navbar>
-							<NavItem>
-								<NavItem>
-									<NavLink
-										href="#terra"
-										onClick={(e) => {
-											e.preventDefault();
-											document
-												.getElementById("reglas")
-												.scrollIntoView();
-										}}
-									>
-										<i className="fas fa-file-contract"></i>
-										<p>Reglas</p>
-									</NavLink>
-								</NavItem>
-							</NavItem>
+							<Rules />
 							<NavItem>
 								<NavLink
 									href="#terra"
@@ -123,18 +110,18 @@ function IndexNavbar() {
 								</NavLink>
 							</NavItem>
 							<NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Siguenos en Twitter
-                </UncontrolledTooltip>
-              </NavItem>
+								<NavLink
+									href="https://twitter.com/TerraKraftMC?ref=TerraKraft"
+									target="_blank"
+									id="twitter-tooltip"
+								>
+									<i className="fab fa-twitter"></i>
+									<p className="d-lg-none d-xl-none">Twitter</p>
+								</NavLink>
+								<UncontrolledTooltip target="#twitter-tooltip">
+									Siguenos en Twitter
+								</UncontrolledTooltip>
+							</NavItem>
 						</Nav>
 					</Collapse>
 				</Container>
