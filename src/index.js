@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
 // Importing Styles
 import './assets/css/bootstrap.min.css';
@@ -15,7 +15,8 @@ ReactDOM.render(
     <Router>
         <Switch>
             <Switch>
-                <Route path='/' render={(props) => <Index {...props} />} />
+                <Route exact path='/' render={(props) => <Index {...props} />} />
+                <Redirect to='/' />
             </Switch>
         </Switch>
     </Router>,
