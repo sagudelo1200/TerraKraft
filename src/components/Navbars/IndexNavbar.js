@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Rules from '../../views/index-sections/RulesModal.js';
+import RulesModal from '../../views/index-sections/RulesModal.js';
+import ShopModal from '../../views/index-sections/ShopModal.js';
 
 // reactstrap components
 import {
@@ -11,7 +12,8 @@ import {
 	Nav,
 	NavItem,
 	NavLink,
-	Collapse
+	Collapse,
+	Button
 } from 'reactstrap';
 
 function IndexNavbar() {
@@ -80,21 +82,8 @@ function IndexNavbar() {
 						navbar
 					>
 						<Nav navbar>
-							<Rules />
-							<NavItem>
-								<NavLink
-									href='#terra'
-									onClick={(e) => {
-										e.preventDefault();
-										document
-											.getElementById('tienda')
-											.scrollIntoView();
-									}}
-								>
-									<i className='fas fa-store'></i>
-									<p>Tienda</p>
-								</NavLink>
-							</NavItem>
+							<RulesModal />
+							<ShopModal />
 							<NavItem>
 								<NavLink
 									href='#terra'
@@ -122,6 +111,20 @@ function IndexNavbar() {
 									Siguenos en Twitter
 								</UncontrolledTooltip>
 							</NavItem>
+							{collapseOpen &&
+								<div className='text-center mt-sm-4 mt-5'>
+									<Button
+										className='btn-icon btn-round'
+										type='button'
+										onClick={() => {
+											document.documentElement.classList.toggle('nav-open');
+											setCollapseOpen(!collapseOpen);
+										}}
+									>
+										<i className='fas fa-chevron-right'></i>
+									</Button>
+								</div>
+							}
 						</Nav>
 					</Collapse>
 				</Container>
