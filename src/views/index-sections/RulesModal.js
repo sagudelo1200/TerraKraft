@@ -13,7 +13,7 @@ import {
 
 // core components
 
-function Rules() {
+function RulesModal() {
   const [modal, setModal] = React.useState(false);
   return (
     <>
@@ -57,4 +57,4 @@ function Rules() {
   );
 }
 
-export default Rules;
+export default RulesModal;
