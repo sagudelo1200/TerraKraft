@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import RulesTabs from "./RulesTabs.js";
+import RulesTabs from './RulesTabs.js';
 
 // reactstrap components
 import {
@@ -9,7 +9,7 @@ import {
   ModalBody,
   NavItem,
   NavLink
-} from "reactstrap";
+} from 'reactstrap';
 
 // core components
 
@@ -19,34 +19,34 @@ function Rules() {
     <>
       <NavItem>
         <NavLink
-          href="#terra"
+          href='#terra'
           onClick={(e) => {
             e.preventDefault();
             setModal(true);
           }}
         >
-          <i className="fas fa-file-contract"></i>
+          <i className='fas fa-file-contract'></i>
           <p>Reglas</p>
         </NavLink>
       </NavItem>
       <Modal isOpen={modal} toggle={() => setModal(false)} size='lg'>
-        <div className="modal-header justify-content-center">
+        <div className='modal-header justify-content-center'>
           <button
-            className="close"
-            type="button"
+            className='close'
+            type='button'
             onClick={() => setModal(false)}
           >
-            <i className="now-ui-icons ui-1_simple-remove"></i>
+            <i className='now-ui-icons ui-1_simple-remove'></i>
           </button>
-          <h4 className="title title-up">Reglas del servidor</h4>
+          <h4 className='title title-up'>Reglas</h4>
         </div>
         <ModalBody>
           <RulesTabs />
         </ModalBody>
-        <div className="modal-footer">
+        <div className='modal-footer'>
           <Button
-            color="success"
-            type="button"
+            color='success'
+            type='button'
             onClick={() => setModal(false)}
           >
             Aceptar
