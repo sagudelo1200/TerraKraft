@@ -21,7 +21,7 @@ function ShopModal() {
             setModal2(true);
           }}
         >
-          <i className='fas fa-file-contract'></i>
+          <i className='fas fa-shopping-cart'></i>
           <p>Tienda</p>
         </NavLink>
       </NavItem>
