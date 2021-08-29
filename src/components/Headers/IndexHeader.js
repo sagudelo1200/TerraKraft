@@ -48,7 +48,7 @@ function IndexHeader() {
             <a href='https://minecraftuuid.com/?search=_Thebe_' target='_blank'>
               _Thebe_
             </a>
-              , Apoyado por{' '}
+              , En colaboración con{' '}
             <a
               href='https://minecraftuuid.com/?search=Nibek'
               target='_blank'
