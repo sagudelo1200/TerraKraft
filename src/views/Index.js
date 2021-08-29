@@ -20,11 +20,6 @@ function Index() {
       <IndexNavbar />
       <div className='wrapper'>
         <IndexHeader />
-        <div className='main'>
-          <div id='reglas'></div>
-          <div id='tienda'></div>
-          <div id='contacto'></div>
-        </div>
       </div>
     </>
   )
