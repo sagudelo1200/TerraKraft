@@ -86,20 +86,6 @@ function IndexNavbar() {
 							<ShopModal />
 							<NavItem>
 								<NavLink
-									href='#terra'
-									onClick={(e) => {
-										e.preventDefault();
-										document
-											.getElementById('contacto')
-											.scrollIntoView();
-									}}
-								>
-									<i className='fas fa-envelope'></i>
-									<p>Contacto</p>
-								</NavLink>
-							</NavItem>
-							<NavItem>
-								<NavLink
 									href='https://twitter.com/TerraKraftMC?ref=TerraKraft'
 									target='_blank'
 									id='twitter-tooltip'
