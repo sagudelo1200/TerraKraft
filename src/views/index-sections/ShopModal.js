@@ -8,9 +8,12 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import RangesTable from './RangesTable.js';
+
+// core components
 
 function ShopModal() {
-  const [modal2, setModal2] = React.useState(false);
+  const [modal, setModal] = React.useState(false);
   return (
     <>
       <NavItem>
@@ -18,43 +21,37 @@ function ShopModal() {
           href='#terra'
           onClick={(e) => {
             e.preventDefault();
-            setModal2(true);
+            setModal(true);
           }}
         >
           <i className='fas fa-shopping-cart'></i>
           <p>Tienda</p>
         </NavLink>
       </NavItem>
-      <Modal
-        modalClassName='modal-mini modal-warning'
-        toggle={() => setModal2(false)}
-        isOpen={modal2}
-      >
+      <Modal isOpen={modal} toggle={() => setModal(false)} size='lg'>
         <div className='modal-header justify-content-center'>
-          <div className='modal-profile'>
-            <i className='fas fa-dollar-sign text-warning'></i>
-          </div>
+          <button
+            className='close'
+            type='button'
+            onClick={() => setModal(false)}
+          >
+            <i className='now-ui-icons ui-1_simple-remove'></i>
+          </button>
+          <h4 className='title title-up text-warning'>Tienda</h4>
         </div>
         <ModalBody>
-          <p className='text-dark'>Adquiere ahora tu rango</p>
+          <RangesTable />
         </ModalBody>
         <div className='modal-footer'>
-          <a
+          <Button
             href='https://terrakraft.tebex.io'
             target='_blank'
-            rel='noreferrer'
-            className='btn btn-neutral'
-            onClick={() => setModal2(false)}
-          >
-            <i className='fas fa-shopping-cart pr-1'></i> Tienda
-          </a>
-          <Button
-            className='btn-neutral'
-            color='link'
+            color='warning'
             type='button'
-            onClick={() => setModal2(false)}
+            onClick={() => setModal(false)}
           >
-            Cerrar
+            <i className='fas fa-dollar-sign'></i>{' '}
+            Comprar
           </Button>
         </div>
       </Modal>
