@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/TerraKraft/static/css/main.d8fa9867.chunk.css",
-    "main.js": "/TerraKraft/static/js/main.ef24e4df.chunk.js",
-    "main.js.map": "/TerraKraft/static/js/main.ef24e4df.chunk.js.map",
-    "runtime-main.js": "/TerraKraft/static/js/runtime-main.aa82bd6e.js",
-    "runtime-main.js.map": "/TerraKraft/static/js/runtime-main.aa82bd6e.js.map",
-    "static/js/2.6b698497.chunk.js": "/TerraKraft/static/js/2.6b698497.chunk.js",
-    "static/js/2.6b698497.chunk.js.map": "/TerraKraft/static/js/2.6b698497.chunk.js.map",
-    "index.html": "/TerraKraft/index.html",
-    "static/css/main.d8fa9867.chunk.css.map": "/TerraKraft/static/css/main.d8fa9867.chunk.css.map",
-    "static/js/2.6b698497.chunk.js.LICENSE.txt": "/TerraKraft/static/js/2.6b698497.chunk.js.LICENSE.txt",
-    "static/media/header.jpg": "/TerraKraft/static/media/header.ed29cc01.jpg",
-    "static/media/now-ui-kit.scss?v=1.5.0": "/TerraKraft/static/media/nucleo-outline.802141dd.woff2"
+    "main.css": "/static/css/main.a90cc420.chunk.css",
+    "main.js": "/static/js/main.ef24e4df.chunk.js",
+    "main.js.map": "/static/js/main.ef24e4df.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.feeb0638.js",
+    "runtime-main.js.map": "/static/js/runtime-main.feeb0638.js.map",
+    "static/js/2.6b698497.chunk.js": "/static/js/2.6b698497.chunk.js",
+    "static/js/2.6b698497.chunk.js.map": "/static/js/2.6b698497.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a90cc420.chunk.css.map": "/static/css/main.a90cc420.chunk.css.map",
+    "static/js/2.6b698497.chunk.js.LICENSE.txt": "/static/js/2.6b698497.chunk.js.LICENSE.txt",
+    "static/media/header.jpg": "/static/media/header.ed29cc01.jpg",
+    "static/media/now-ui-kit.scss?v=1.5.0": "/static/media/nucleo-outline.802141dd.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa82bd6e.js",
+    "static/js/runtime-main.feeb0638.js",
     "static/js/2.6b698497.chunk.js",
-    "static/css/main.d8fa9867.chunk.css",
+    "static/css/main.a90cc420.chunk.css",
     "static/js/main.ef24e4df.chunk.js"
   ]
 }
